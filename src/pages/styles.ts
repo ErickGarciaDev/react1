@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
 export const LoginContainer = styled.div`
-  height: 60%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   border-radius: 10px;
 
@@ -13,6 +16,9 @@ export const LoginContainer = styled.div`
 
     input {
       margin-left: 5px;
+      width: 300px;
+      height: 30px;
+      font-size: 16px;
     }
 
     select {
@@ -21,14 +27,24 @@ export const LoginContainer = styled.div`
   }
 
   button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 16px;
+    width: 200px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #337df0;
+    color: white;
+
+    &:hover {
+      scale: 1.1;
+      transition-duration: 0.5s;
+      cursor: pointer;
+    }
   }
 `;
 
 export const RegistrationContainer = styled(LoginContainer)`
-  height: 60%;
-  padding: 20px;
   background-color: #53c1f0;
 `;

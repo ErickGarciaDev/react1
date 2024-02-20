@@ -10,7 +10,7 @@ export const Home = () => {
         display: 'flex',
         gap: '10%',
         justifyContent: 'center',
-        margin: ' 50px 100px',
+        padding: ' 50px 100px',
       }}
     >
       <LoginContainer>
@@ -30,7 +30,7 @@ export const Home = () => {
       <span
         style={{
           display: 'flex',
-          height: '50%',
+          height: '100%',
           alignItems: 'center',
           fontSize: '30px',
         }}
