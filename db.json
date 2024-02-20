@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "email": "johndoe@gmail.com",
+      "password": "123",
+      "birthDate": "01/12/1994",
+      "state": "RJ",
+      "country": "Brasil"
+    }
+  ]
+}
