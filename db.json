@@ -6,7 +6,26 @@
       "password": "123",
       "birthDate": "01/12/1994",
       "state": "RJ",
-      "country": "Brasil"
+      "country": "Brasil",
+      "id": "61ff"
+    },
+    {
+      "id": "3d20",
+      "name": "Erick",
+      "email": "example@hotmail.com",
+      "password": "123",
+      "birthDate": "12/09/1997",
+      "country": "BR",
+      "state": "RJ"
+    },
+    {
+      "id": "bf58",
+      "name": "Rafael Guimarães",
+      "email": "rafa@gmail.com",
+      "password": "123",
+      "birthDate": "12/09/1997",
+      "country": "DE",
+      "state": "AC"
     }
   ]
 }

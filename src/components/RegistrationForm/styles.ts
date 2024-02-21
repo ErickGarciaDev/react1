@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LoginContainer = styled.div`
+export const RegistrationContainer = styled.div`
   background-color: #f2f2f2;
   padding: 20px;
   width: 500px;
@@ -8,8 +8,9 @@ export const LoginContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
   border-radius: 10px;
+  height: 600px;
+  background-color: #53c1f0;
 
   label {
     margin-top: 20px;
@@ -23,6 +24,9 @@ export const LoginContainer = styled.div`
 
     select {
       margin-left: 5px;
+      width: 300px;
+      height: 30px;
+      font-size: 16px;
     }
   }
 
@@ -43,8 +47,4 @@ export const LoginContainer = styled.div`
       cursor: pointer;
     }
   }
-`;
-
-export const RegistrationContainer = styled(LoginContainer)`
-  background-color: #53c1f0;
 `;
