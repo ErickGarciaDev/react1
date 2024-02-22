@@ -11,12 +11,13 @@ const style = {
   left: '50%',
   textAlign: 'center',
   transform: 'translate(-50%, -50%)',
-  width: 700,
-  height: 700,
+  width: 630,
+  height: 630,
   bgcolor: 'background.paper',
-  border: '2px solid #000',
   boxShadow: 24,
+  borderRadius: '5px',
   p: 4,
+  padding: 0,
 };
 
 export const Home = () => {
@@ -68,16 +69,31 @@ export const Home = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
+                position: 'relative',
               }}
             >
-              <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-                <label htmlFor="name">
-                  Nome do jogo:
-                  <input type="text" name="name" id="name" />
-                </label>
+              <div
+                style={{
+                  width: '100%',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  padding: '0 140px',
+                  alignItems: 'center',
+                }}
+              >
+                <label htmlFor="name">Nome do jogo:</label>
+                <input type="text" name="name" id="name" />
               </div>
-              <label htmlFor="">
-                Categoria:
+              <div
+                style={{
+                  width: '100%',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  padding: '0 140px',
+                  alignItems: 'center',
+                }}
+              >
+                <label htmlFor="">Categoria:</label>
                 <select id="category">
                   <option value="Ação">Ação</option>
                   <option value="Aventura">Aventura</option>
@@ -85,38 +101,91 @@ export const Home = () => {
                   <option value="Estratégia">Estratégia</option>
                   <option value="Esportes">Esportes</option>
                 </select>
-              </label>
-              <div>
-                <label htmlFor="">
-                  Url:
-                  <input type="text" name="" id="url" />
-                </label>
               </div>
-              <label htmlFor="">
-                Video:
-                <input type="text" name="" id="video" />
-              </label>
-
-              <label htmlFor="">
-                Link da imagem:
-                <input type="text" name="" id="img" />
-              </label>
-              <label
-                htmlFor=""
+              <div
                 style={{
+                  width: '100%',
                   display: 'flex',
-                  alignItems: 'start',
+                  justifyContent: 'space-between',
+                  padding: '0 140px',
+                  alignItems: 'center',
                 }}
               >
-                Descrição:
+                <label htmlFor="">Url:</label>
+                <input type="text" name="" id="url" />
+              </div>
+              <div
+                style={{
+                  width: '100%',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  padding: '0 140px',
+                  alignItems: 'center',
+                }}
+              >
+                <label htmlFor="">Video:</label>
+                <input type="text" name="" id="video" />
+              </div>
+
+              <div
+                style={{
+                  width: '100%',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  padding: '0 140px',
+                  alignItems: 'center',
+                }}
+              >
+                <label htmlFor="" style={{ textAlign: 'left' }}>
+                  Link da imagem:
+                </label>
+                <input type="text" name="" id="img" />
+              </div>
+
+              <div
+                style={{
+                  width: '100%',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  padding: '0 140px',
+                  alignItems: 'center',
+                  marginTop: '10px',
+                }}
+              >
+                <label
+                  htmlFor=""
+                  style={{
+                    display: 'flex',
+                    alignSelf: 'start',
+                  }}
+                >
+                  Descrição:
+                </label>
                 <textarea
                   name=""
                   id="description"
                   maxLength={150}
                   style={{ marginTop: 0 }}
                 ></textarea>
-              </label>
-              <button>Salvar</button>
+              </div>
+              <button
+                onClick={handleClose}
+                className="saveButtonModal"
+                style={{
+                  position: 'absolute',
+                  bottom: '-40px',
+                  width: '210px',
+                  right: '130px',
+                  padding: '10px',
+                  border: 'none',
+                  color: 'white',
+                  backgroundColor: '#91d722',
+                  borderRadius: '10px',
+                  cursor: 'pointer',
+                }}
+              >
+                Salvar
+              </button>
             </form>
           </Box>
         </Modal>

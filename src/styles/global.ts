@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     #name, #category, #url, #video, #description, #img {
-        width: 200px;
+        width: 210px;
         padding: 5px;
         margin: 10px 10px;
         line-height: 1.5;
@@ -51,6 +51,11 @@ export const GlobalStyle = createGlobalStyle`
 
     #description {
         height: 150px;
+    }
+
+    .saveButtonModal:hover {
+        scale: 1.02;
+        transition-duration: .5s;
     }
    
 `;
