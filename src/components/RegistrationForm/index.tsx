@@ -18,7 +18,7 @@ export const RegistrationForm = () => {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data),
+            body: JSON.stringify({ ...data, userType: 'normal' }),
           })
             .then((response) => response.json())
             .then(() => alert('usuário cadastrado com sucesso'))
