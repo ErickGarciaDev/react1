@@ -26,6 +26,24 @@
       "birthDate": "12/09/1997",
       "country": "DE",
       "state": "AC"
+    },
+    {
+      "id": "48e0",
+      "name": "Mariane Ximenes",
+      "email": "mari@gmail.com",
+      "password": "123",
+      "birthDate": "08/01/1993",
+      "country": "BR",
+      "state": "DF"
+    },
+    {
+      "id": "de91",
+      "name": "Gabriel Eduardo",
+      "email": "gabriel@hotmail.com",
+      "password": "123",
+      "birthDate": "29/12/2000",
+      "country": "DE",
+      "state": "MG"
     }
   ],
   "games": [

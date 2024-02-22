@@ -21,6 +21,7 @@ export const RegistrationForm = () => {
             body: JSON.stringify(data),
           })
             .then((response) => response.json())
+            .then(() => alert('usuário cadastrado com sucesso'))
             .catch((error) => console.error('Error:', error))
             .finally(() => {
               reset();

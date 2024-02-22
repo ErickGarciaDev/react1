@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { GameCards } from '../components/GameCards';
 export const Home = () => {
+  const user = window.localStorage.getItem('session');
+  console.log(user);
+
   const [games, setGames]: any = useState([]);
 
   useEffect(() => {
@@ -13,8 +16,11 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className="cardsContainer">
-      {games && games.map((game: any) => <GameCards props={game} />)}
-    </div>
+    <>
+      <div className="cardsContainer">
+        {games &&
+          games.map((game: any) => <GameCards key={game.name} props={game} />)}
+      </div>
+    </>
   );
 };

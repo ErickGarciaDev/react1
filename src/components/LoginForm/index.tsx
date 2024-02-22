@@ -18,6 +18,7 @@ export const LoginForm = () => {
           alert('Usuário ou senha inválidos');
           reset();
         } else {
+          window.localStorage.setItem('session', data.email);
           navigate('/home');
         }
       });
