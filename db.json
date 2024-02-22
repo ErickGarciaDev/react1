@@ -27,5 +27,23 @@
       "country": "DE",
       "state": "AC"
     }
+  ],
+  "games": [
+    {
+      "name": "Doom eternal",
+      "category": "ação",
+      "url": "https://cdn.awsli.com.br/800x800/22/22652/produto/62888261/capa-doom-jsw3tbzhu2.png",
+      "video": "",
+      "description": "Doom é um jogo fps em que você deve matar criaturas infernais de outra dimensão",
+      "img": "https://cdn.awsli.com.br/800x800/22/22652/produto/62888261/capa-doom-jsw3tbzhu2.png"
+    },
+    {
+      "name": "Homem Aranha",
+      "category": "ação",
+      "url": "https://sm.ign.com/ign_br/image/s/spider-man/spider-man-the-origins-of-every-costume-in-the-ps4-game_epng.jpg",
+      "video": "",
+      "description": "Doom é um jogo fps em que você deve matar criaturas infernais de outra dimensão",
+      "img": "https://sm.ign.com/ign_br/image/s/spider-man/spider-man-the-origins-of-every-costume-in-the-ps4-game_epng.jpg"
+    }
   ]
 }

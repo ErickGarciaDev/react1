@@ -10,4 +10,11 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
     }
+
+    .cardsContainer {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        gap: 10px;
+    }
 `;
