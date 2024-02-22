@@ -6,12 +6,9 @@ import { Home } from './pages/Home';
 export const Router = () => {
   return (
     <Routes>
-      <Route path="/account" element={<DefaultLayout />}>
-        <Route path="/account" element={<Account />} />
-      </Route>
-
       <Route path="/" element={<DefaultLayout />}>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Account />} />
+        <Route path="/home" element={<Home />} />
       </Route>
     </Routes>
   );

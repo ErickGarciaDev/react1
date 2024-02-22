@@ -18,7 +18,7 @@ export const LoginForm = () => {
           alert('Usuário ou senha inválidos');
           reset();
         } else {
-          navigate('/');
+          navigate('/home');
         }
       });
   };
